@@ -4,18 +4,12 @@
 @layer base {
   :root {
     --color-blue: oklch(0.72 0.11 178);
-    --color-gray: oklch(0.65 0.05 120);
+    --color-gray-50: oklch(0.65 0.05 120);
     --color-gray-100: oklch(0.75 0.03 115);
     --color-gray-200: oklch(0.75 0.05 130);
     --color-gray-300: oklch(0.55 0.08 145);
     --color-zinc: oklch(0.1 0.15 185);
   }
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -25,5 +19,12 @@ body {
   height: 100%;
   background: #000;
   border-color: #3b3b3b;
-  user-select: none;
+  -webkit-user-select: none;
+}
+
+.screen-max-width {
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  position: relative;
+  max-width: 1120px;
 }
