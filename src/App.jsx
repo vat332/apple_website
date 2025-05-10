@@ -1,15 +1,11 @@
 import React from "react";
+import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-
 const App = () => {
   return (
     <main className="bg-black">
       <Navbar />
-      <div className="bg-amber-100 p-5">
-        <li></li>
-        <li></li>
-        <li></li>
-      </div>
+      <Hero />
     </main>
   );
 };
