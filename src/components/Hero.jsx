@@ -1,8 +1,11 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import React from "react";
-
+import React, { useState } from "react";
+import { heroVideo, smallHeroVideo } from "../utils";
 const Hero = () => {
+  const [videoSrc, setVideoSrc] = useState(
+    window.innerWidth < 760 ? smallHeroVideo : heroVideo
+  );
   useGSAP(() => {
     gsap.to("#hero", {
       opacity: 1,
@@ -15,6 +18,17 @@ const Hero = () => {
         <p id="hero" className="hero-title">
           iPhone 15 Pro
         </p>
+        <div className="md:w-10/12 w-9/12">
+          <video
+            className="pointer-events-none"
+            autoPlay
+            muted
+            playsInline={true}
+            key={videoSrc}
+          >
+            <source src={videoSrc} type="video/mp4" />
+          </video>
+        </div>
       </div>
     </section>
   );
