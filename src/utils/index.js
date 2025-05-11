@@ -1,8 +1,12 @@
 import apple from "/assets/images/apple.svg";
 import bag from "/assets/images/bag.svg";
+import black from "/assets/images/black.jpg";
+import blue from "/assets/images/blue.jpg";
 import right from "/assets/images/right.svg";
 import search from "/assets/images/search.svg";
 import watch from "/assets/images/watch.svg";
+import white from "/assets/images/white.jpg";
+import yellow from "/assets/images/yellow.jpg";
 import hmv from "/assets/videos/hero.mp4";
 import highlightFirstmv from "/assets/videos/highlight-first.mp4";
 import highlightFourthmv from "/assets/videos/hightlight-fourth.mp4";
@@ -23,3 +27,7 @@ export const highlightFourthVideo = highlightFourthmv;
 
 export const watchImg = watch;
 export const rightImg = right;
+export const yellowImg = yellow;
+export const blueImg = blue;
+export const whiteImg = white;
+export const blackImg = black;
