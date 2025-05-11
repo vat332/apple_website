@@ -4,7 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import gsap from "gsap";
 import React, { useRef, useState } from "react";
 import * as THREE from "three";
-import { models } from "../constants";
+import { models, sizes } from "../constants";
 import { yellowImg } from "../utils";
 import ModelView from "./ModelView";
 
@@ -85,6 +85,21 @@ const Model = () => {
                   />
                 ))}
               </ul>
+              <button className="size-btn-container">
+                {sizes.map(({ label, value }) => (
+                  <span
+                    key={label}
+                    className="size-btn"
+                    style={{
+                      backgroundColor: size === value ? "white" : "transparent",
+                      color: size === value ? "black" : "white",
+                    }}
+                    onClick={() => setSize(value)}
+                  >
+                    {label}
+                  </span>
+                ))}
+              </button>
             </div>
           </div>
         </div>
