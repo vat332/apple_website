@@ -5,6 +5,7 @@ import blue from "/assets/images/blue.jpg";
 import chip from "/assets/images/chip.jpeg";
 import explore1 from "/assets/images/explore1.jpg";
 import explore2 from "/assets/images/explore2.jpg";
+import frame from "/assets/images/frame.png";
 import pause from "/assets/images/pause.svg";
 import play from "/assets/images/play.svg";
 import replay from "/assets/images/replay.svg";
@@ -15,7 +16,9 @@ import white from "/assets/images/white.jpg";
 
 import yellow from "/assets/images/yellow.jpg";
 import exploremv from "/assets/videos/explore.mp4";
+import framemv from "/assets/videos/frame.mp4";
 import hmv from "/assets/videos/hero.mp4";
+
 import highlightFirstmv from "/assets/videos/highlight-first.mp4";
 import highlightFourthmv from "/assets/videos/hightlight-fourth.mp4";
 import highlightThirdmv from "/assets/videos/hightlight-sec.mp4";
@@ -31,6 +34,7 @@ export const highlightFirstVideo = highlightFirstmv;
 export const highlightSecondVideo = highlightSectmv;
 export const highlightThirdVideo = highlightThirdmv;
 export const highlightFourthVideo = highlightFourthmv;
+export const frameVideo = framemv;
 
 export const watchImg = watch;
 export const rightImg = right;
@@ -45,3 +49,4 @@ export const exploreVideo = exploremv;
 export const explore1Img = explore1;
 export const explore2Img = explore2;
 export const chipImg = chip;
+export const frameImg = frame;
