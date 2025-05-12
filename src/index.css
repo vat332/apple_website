@@ -85,4 +85,11 @@ body {
   .feature-text-container {
     @apply w-full  flex-col md:flex-row mt-10 md:mt-16 gap-5;
   }
+  .hiw-title {
+    @apply text-4xl md:text-7xl font-semibold text-center;
+  }
+
+  .hiw-subtitle {
+    @apply text-gray-50 font-semibold text-xl md:text-2xl py-10 text-center;
+  }
 }
