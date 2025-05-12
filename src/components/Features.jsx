@@ -1,4 +1,5 @@
 import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import React, { useRef } from "react";
 import { explore1Img, explore2Img, exploreVideo } from "../utils";
 import { animateWithGsap } from "../utils/animations";
@@ -6,6 +7,16 @@ import { animateWithGsap } from "../utils/animations";
 const Features = () => {
   const videoRef = useRef();
   useGSAP(() => {
+    gsap.to("#explore_video", {
+      scrollTrigger: {
+        trigger: "#explore_video",
+        toggleActions: "play pause reverse restart",
+        start: "-10% bottom",
+      },
+      onComplete: () => {
+        videoRef.current.play();
+      },
+    });
     animateWithGsap("#features_title", {
       y: 0,
       opacity: 1,
